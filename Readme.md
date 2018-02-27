@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Stepan Avdevic](https://up.htmlacademy.ru/htmlcss/20/user/570493).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Савотиков](https://htmlacademy.ru/profile/id98316).
 
 ---
 
