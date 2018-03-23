@@ -12,7 +12,7 @@
       <ul class="site_navigation">
         <li><a href="info.html">Информация</a></li>
         <li><a href="gallery.html">Фото и видео</a></li>
-        <li class="site_navigation_current"><a href="index.html"><img src="img/main_logo.png" width="138" height="70" alt="Логотип седоны"></a></li>
+        <li class="site_navigation_current"><a href="index.html" tabindex="-1"><img src="img/main_logo.png" width="138" height="70" alt="Логотип седоны"></a></li>
         <li><a href="map.html">Карта штата</a></li>
         <li><a href="hotels.html">Гостиницы</a></li>
       </ul>
@@ -84,15 +84,41 @@
         <br>И мы покажем вам лучшие предложения гостиниц в седоне</p>
       <div class="find_hotel_sedona">
         <h3>Поиск гостиницы в седоне</h3>
-        <p>Дата заезда:</p>
-        <span class="form_arrival">#</span>
-        <p>Дата выезда:</p>
-        <span class="form_departure">#</span>
-        <p>Взрослые:</p>
-        <span class="form_adults">#</span>
-        <p>Дети:</p>
-        <span class="form_kids">#</span>
-        <p>Найти</p>
+        <form class="hotels" method="post" action="https://echo.htmlacademy.ru">
+          <ul class="form_list">
+            <li>
+              <label> Дата заезда:
+                <input type="date" id="hotels_date_arrival" class="date arrival_date">
+              </label>
+            </li>
+            <li>
+              <label>Дата выезда:
+                <input type="date" id="hotels_date_departure" class="date departure_date">
+              </label>
+            </li>
+            <li>
+              <label for="hotels_adult_count">Взрослые:</label>
+              <div>
+                <button type="button" id="hotels_adult_plus" class="plus adult_plus">+</button>
+                <input type="text" id="hotels_adult_count" class="adult_count">
+                <button type="button" id="hotels_adult_minus" class="minus adult_minus">-</button>
+              </div>
+            </li>
+            <li>
+              <label for="hotels_kids_count">Дети:</label>
+              <div>
+                <button type="button" id="hotels_kids_plus" class="plus kids_plus">+</button>
+                <input type="text" id="hotels_kids_count" class="kids_count">
+                <button type="button" id="hotels_kids_minus" class="minus adult_minus">-</button>
+              </div>
+            </li>
+            <li>
+              <button id="hotels_find_hotel" type="submit" class="hotels find_hotel">
+                Найти
+              </button>
+            </li>
+          </ul>
+        </form>
       </div>
     </section>
   </main>
@@ -101,17 +127,17 @@
     <div class="footer_social">
       <ul class="footer_social_list">
         <li>
-          <a class="social_icon social_icon_tw" href="#">
+          <a class="social_icon social_icon_tw" href="#" aria-label="Twitter">
             <p class="visually_hidden">Twitter</p>
           </a>
         </li>
         <li>
-          <a class="social_icon social_icon_fb" href="#">
+          <a class="social_icon social_icon_fb" href="#" aria-label="Facebook">
             <p class="visually_hidden">Facebook</p>
           </a>
         </li>
         <li>
-          <a class="social_icon social_icon_yt" href="#">
+          <a class="social_icon social_icon_yt" href="#" aria-label="Youtube">
             <p class="visually_hidden">Youtube</p>
           </a>
         </li>

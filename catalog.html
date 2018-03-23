@@ -20,35 +20,52 @@
   </header>
   <main class="container">
     <section class="wishes">
-      <ul class="infrastructure">
-        <li>
-          <span class="check_square">#</span>
-          <p>Бассейн</p>
-        </li>
-        <li>
-          <span class="check_square">#</span>
-          <p>Парковка</p>
-        </li>
-        <li>
-          <span class="check_square">#</span>
-          <p>Wi-fi</p>
-        </li>
-      </ul>
-      <ul class="accommodation">
-        <li>
-          <span class="check_square">#</span>
-          <p>Гостиница</p>
-        </li>
-        <li>
-          <span class="check_square">#</span>
-          <p>Мотель</p>
-        </li>
-        <li>
-          <span class="check_square">#</span>
-          <p>Апартаменты</p>
-        </li>
-      </ul>
-      <div class="price_per_day">#</div>
+      <form class="options" method="post" action="https://echo.htmlacademy.ru" oninput="priceoutput.value=options_range_price.value">
+        <ul class="infrastructure">
+          <li>
+            <h2>Инфраструктура:</h2>
+          </li>
+          <li>
+            <input id="options_swimming_pool" class="swimming_pool" type="checkbox">
+            <p>Бассейн</p>
+          </li>
+          <li>
+            <input id="options_parking_spot" class="parking_spot" type="checkbox">
+            <p>Парковка</p>
+          </li>
+          <li>
+            <input id="options_wifi_internet" class="wifi_internet" type="checkbox">
+            <p>Wi-fi</p>
+          </li>
+        </ul>
+        <ul class="accommodation">
+          <li>
+            <h2>Тип жилья:</h2>
+          </li>
+          <li>
+            <input id="options_hotel_rent" class="hotel_rent" type="checkbox">
+            <p>Гостиница</p>
+          </li>
+          <li>
+            <input id="options_motel_rent" class="motel_rent" type="checkbox">
+            <p>Мотель</p>
+          </li>
+          <li>
+            <input id="options_apartment_rent" class="apartment_rent" type="checkbox">
+            <p>Апартаменты</p>
+          </li>
+        </ul>
+        <ul>
+          <li>Стоимость в сутки (P):
+          <output name="priceoutput"></output></li>
+          <li>
+            <input id="options_range_price" class="range_price" type="range" min="0" max="5000" step="500">
+          </li>
+          <li>
+            <button id="options_show_results" class="show_results" type="button">Показать</button>
+          </li>
+        </ul>
+      </form>
     </section>
     <section class="sort_results">
       <h2>Найдено</h2>
@@ -56,16 +73,21 @@
         <li>
           <p>Сортировка:</p>
         </li>
-        <li class="sort_by_price">
-          <p>По цене</p>
+        <li>
+          <button id="sort_by_price" type="button">По цене</button>
         </li>
-        <li class="sort_by_type">
-          <p>По типу</p>
+        <li>
+          <button id="sort_by_type" type="button">По типу</button>
         </li>
-        <li class="sort_by_rating">
-          <p>По рейтингу</p>
+        <li>
+          <button id="sort_by_rating" type="button">По рейтингу</button>
         </li>
-        <span class="priorities_icon">#</span>
+        <li>
+          <button id="priorities_icon_up" type="button">up</button>
+        </li>
+        <li>
+          <button id="priorities_icon_down" type="button">down</button>
+        </li>
       </ul>
     </section>
     <section class="results">
@@ -109,22 +131,22 @@
       </ul>
     </section>
   </main>
-  <footer class="main_footer">
+   <footer class="main_footer">
     <p class="visit_sedona">#Visitsedona</p>
     <div class="footer_social">
       <ul class="footer_social_list">
         <li>
-          <a class="social_icon social_icon_tw" href="#">
+          <a class="social_icon social_icon_tw" href="#" aria-label="Twitter">
             <p class="visually_hidden">Twitter</p>
           </a>
         </li>
         <li>
-          <a class="social_icon social_icon_fb" href="#">
+          <a class="social_icon social_icon_fb" href="#" aria-label="Facebook">
             <p class="visually_hidden">Facebook</p>
           </a>
         </li>
         <li>
-          <a class="social_icon social_icon_yt" href="#">
+          <a class="social_icon social_icon_yt" href="#" aria-label="Youtube">
             <p class="visually_hidden">Youtube</p>
           </a>
         </li>
