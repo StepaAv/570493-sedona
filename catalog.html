@@ -21,73 +21,74 @@
   <main class="container">
     <img class="intro_catalog" src="img/intro_2.jpg" width="1200" height="217" alt="Пейзаж Седоны">
     <section class="wishes">
-      <form class="options" method="post" action="https://echo.htmlacademy.ru" oninput="priceoutput.value=options_range_price.value">
+      <form class="options" method="post" action="https://echo.htmlacademy.ru">
+        <h2>Инфраструктура:</h2>
         <ul class="infrastructure">
           <li>
-            <h2>Инфраструктура:</h2>
+            <label>
+              <input  class="swimming_pool" type="checkbox"> Бассейн
+            </label>
           </li>
           <li>
-            <input id="options_swimming_pool" class="swimming_pool" type="checkbox">
-            <p>Бассейн</p>
+            <label>
+              <input  class="parking_spot" type="checkbox"> Парковка
+            </label>
           </li>
           <li>
-            <input id="options_parking_spot" class="parking_spot" type="checkbox">
-            <p>Парковка</p>
-          </li>
-          <li>
-            <input id="options_wifi_internet" class="wifi_internet" type="checkbox">
-            <p>Wi-fi</p>
+            <label>
+              <input  class="wifi_internet" type="checkbox"> Wi-fi
+            </label>
           </li>
         </ul>
+        <h2>Тип жилья:</h2>
         <ul class="accommodation">
           <li>
-            <h2>Тип жилья:</h2>
+            <label>
+              <input  class="hotel_rent" type="checkbox"> Гостиница
+            </label>
           </li>
           <li>
-            <input id="options_hotel_rent" class="hotel_rent" type="checkbox">
-            <p>Гостиница</p>
+            <label>
+              <input  class="motel_rent" type="checkbox"> Мотель
+            </label>
           </li>
           <li>
-            <input id="options_motel_rent" class="motel_rent" type="checkbox">
-            <p>Мотель</p>
-          </li>
-          <li>
-            <input id="options_apartment_rent" class="apartment_rent" type="checkbox">
-            <p>Апартаменты</p>
+            <label>
+              <input  class="apartment_rent" type="checkbox"> Апартаменты
+            </label>
           </li>
         </ul>
         <ul>
           <li>Стоимость в сутки (P):
-          <output name="priceoutput"></output></li>
-          <li>
-            <input id="options_range_price" class="range_price" type="range" min="0" max="5000" step="500">
+            <output name="priceoutput"></output>
           </li>
           <li>
-            <button id="options_show_results" class="show_results" type="button">Показать</button>
+            <input  class="range_price" type="range" min="0" max="5000" step="500">
+          </li>
+          <li>
+            <button class="show_results" type="button">Показать</button>
           </li>
         </ul>
       </form>
     </section>
     <section class="sort_results">
       <h2>Найдено</h2>
+      <h3>Сортировка:</h3>
       <ul class="sort_results_by">
         <li>
-          <p>Сортировка:</p>
+          <a href="#">По цене</a>
         </li>
         <li>
-          <button id="sort_by_price" type="button">По цене</button>
+          <a href="#">По типу</a>
         </li>
         <li>
-          <button id="sort_by_type" type="button">По типу</button>
+          <a href="#">По рейтингу</a>
         </li>
         <li>
-          <button id="sort_by_rating" type="button">По рейтингу</button>
+          <button type="button" class="visually_hidden">up</button>
         </li>
         <li>
-          <button id="priorities_icon_up" type="button">up</button>
-        </li>
-        <li>
-          <button id="priorities_icon_down" type="button">down</button>
+          <button type="button" class="visually_hidden">down</button>
         </li>
       </ul>
     </section>
@@ -132,7 +133,7 @@
       </ul>
     </section>
   </main>
-   <footer class="main_footer">
+  <footer class="main_footer">
     <p class="visit_sedona">#Visitsedona</p>
     <div class="footer_social">
       <ul class="footer_social_list">
