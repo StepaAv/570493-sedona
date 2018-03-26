@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+.site_navigation {
+  list-style-type: none;
+ 
+}
+.site_navigation a {
+	color: #333333;
+	font-weight: 700;
+}
+
+.site_navigation a:hover,
+.site_navigation a:focus {
+	color: #81b3d2;
+}
+
+.site_navigation a:active {
+	color: #cccccc;
+}
+
+.features_list {
+  list-style-type: none;
+  }
+
+.features_list {
+	text-align: center;
+	line-height: 26px;
+}
+.features_list li:first-child {
+  	font-size: 21px;
+
+  }
+
+.colored {
+	background-color: #81b3d2;
+	color: #ffffff;
+}
+
+.feature_item h3 {
+	font-size: 21px;
+	font-weight: bold;
+}
+
+.find_hotel {
+	text-align: center;
+}
+
+.find_hotel h2 {
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: bold;
+}
+
+.interested p {
+	line-height: 24px;
+}
+
+.form_list li{
+	list-style: none;
+}
+
+.find_hotel button[type="submit"]  {
+    font: inherit;
+    text-transform: uppercase;
+    background-color: #81b3d2;
+    color: #ffffff;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.find_hotel button[type="submit"]:hover,
+.find_hotel button[type="submit"]:focus {
+	background-color: #669ec0;
+}
+
+.find_hotel button[type="submit"]:active {
+	background-color: #5496bd;
+	color: #94b9d2;
+}
+
+.footer_social_list {
+	list-style-type: none;
+}
+
+.find_hotel_sedona {
+	background-image: url("../img/map.jpg");
+}
+
