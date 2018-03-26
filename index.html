@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -25,13 +28,13 @@
       <h2 class="visually_hidden">Преимущества</h2>
       <ul class="features_list">
         <li>
-          <p>Седона — небольшой городок в аризоне,
-            <br>заслуживающий большего!</p>
+          Седона — небольшой городок в аризоне,
+          <br>заслуживающий большего!
         </li>
         <li>
           <p>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
         </li>
-        <li class="feature_item">
+        <li class="feature_item colored">
           <h3>Настоящий<br>городок</h3>
           <span class="number">1</span>
           <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
@@ -55,7 +58,7 @@
         <li class="feature_picture">
           <img src="img/main_photo_two.jpg" width="800" height="256" alt="каньон">
         </li>
-        <li class="feature_item">
+        <li class="feature_item colored">
           <h3>Там есть мост дьявола</h3>
           <span class="number">2</span>
           <p>
@@ -74,7 +77,7 @@
         <li class="feature_item">
           <h3>Мало туристов</h3>
           <span class="number">5</span>
-          <p>Ьольшинство едет в гранд каньон и толпится там</p>
+          <p>Большинство едет в гранд каньон и толпится там</p>
         </li>
       </ul>
     </section>
@@ -99,21 +102,33 @@
             <li>
               <label for="hotels_adult_count">Взрослые:</label>
               <div>
-                <button type="button"  class="plus visually_hidden">+</button>
-                <input type="text"  class="people_count">
-                <button type="button" class="minus visually_hidden">-</button>
+                <label>
+                  <button type="button" class="plus visually_hidden">+</button>
+                  <p class="visually_hidden">Увеличить</p>
+                </label>
+                <input id="hotels_adult_count" type="text" class="people_count">
+                <label>
+                  <button type="button" class="minus visually_hidden">-</button>
+                  <p class="visually_hidden">Уменьшить</p>
+                </label>
               </div>
             </li>
             <li>
               <label for="hotels_kids_count">Дети:</label>
               <div>
-                <button type="button" class="plus visually_hidden">+</button>
-                <input type="text" class="people_count">
-                <button type="button"  class="minus visually_hidden">-</button>
+                <label>
+                  <button type="button" class="plus visually_hidden">+</button>
+                  <p class="visually_hidden">Увеличить</p>
+                </label>
+                <input id="hotels_kids_count" type="text" class="people_count">
+                <label>
+                  <button type="button" class="minus visually_hidden">-</button>
+                  <p class="visually_hidden">Уменьшить</p>
+                </label>
               </div>
             </li>
             <li>
-              <button id="hotels_find_hotel" type="submit" class="hotels find_hotel">
+              <button type="submit" class="hotels find_hotel">
                 Найти
               </button>
             </li>

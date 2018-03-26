@@ -23,38 +23,38 @@
     <section class="wishes">
       <form class="options" method="post" action="https://echo.htmlacademy.ru">
         <h2>Инфраструктура:</h2>
-        <ul class="infrastructure">
+        <ul class="choices">
           <li>
             <label>
-              <input  class="swimming_pool" type="checkbox"> Бассейн
+              <input class="checkbox" type="checkbox" name="swimmingpool"> Бассейн
             </label>
           </li>
           <li>
             <label>
-              <input  class="parking_spot" type="checkbox"> Парковка
+              <input class="checkbox" type="checkbox" name="parking"> Парковка
             </label>
           </li>
           <li>
             <label>
-              <input  class="wifi_internet" type="checkbox"> Wi-fi
+              <input class="checkbox" type="checkbox" name="wifi"> Wi-fi
             </label>
           </li>
         </ul>
         <h2>Тип жилья:</h2>
-        <ul class="accommodation">
+        <ul class="choices">
           <li>
             <label>
-              <input  class="hotel_rent" type="checkbox"> Гостиница
+              <input class="checkbox" type="checkbox" name="hotel"> Гостиница
             </label>
           </li>
           <li>
             <label>
-              <input  class="motel_rent" type="checkbox"> Мотель
+              <input class="checkbox" type="checkbox" name="motel"> Мотель
             </label>
           </li>
           <li>
             <label>
-              <input  class="apartment_rent" type="checkbox"> Апартаменты
+              <input class="checkbox" type="checkbox" name="appartment"> Апартаменты
             </label>
           </li>
         </ul>
@@ -63,7 +63,7 @@
             <output name="priceoutput"></output>
           </li>
           <li>
-            <input  class="range_price" type="range" min="0" max="5000" step="500">
+            <input class="range_price" type="range" min="0" max="5000" step="500">
           </li>
           <li>
             <button class="show_results" type="button">Показать</button>
@@ -85,10 +85,12 @@
           <a href="#">По рейтингу</a>
         </li>
         <li>
-          <button type="button" class="visually_hidden">up</button>
+          <a href="#" class="sort_up">
+            <p class="visually_hidden">По возрастанию</p></a>
         </li>
         <li>
-          <button type="button" class="visually_hidden">down</button>
+          <a href="#" class="sort_down">
+            <p class="visually_hidden">По убыванию</p></a>
         </li>
       </ul>
     </section>
