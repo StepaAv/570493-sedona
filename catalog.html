@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -22,7 +25,7 @@
     <img class="intro_catalog" src="img/intro_2.jpg" width="1200" height="217" alt="Пейзаж Седоны">
     <section class="wishes">
       <form class="options" method="post" action="https://echo.htmlacademy.ru">
-        <h2>Инфраструктура:</h2>
+        <h2 class="checkbox_contents">Инфраструктура:</h2>
         <ul class="choices">
           <li>
             <label>
@@ -40,7 +43,7 @@
             </label>
           </li>
         </ul>
-        <h2>Тип жилья:</h2>
+        <h2 class="checkbox_contents">Тип жилья:</h2>
         <ul class="choices">
           <li>
             <label>
@@ -59,7 +62,7 @@
           </li>
         </ul>
         <ul>
-          <li>Стоимость в сутки (P):
+          <li class="price_per_day">Стоимость в сутки (P):
             <output name="priceoutput"></output>
           </li>
           <li>
@@ -75,7 +78,7 @@
       <h2>Найдено</h2>
       <h3>Сортировка:</h3>
       <ul class="sort_results_by">
-        <li>
+        <li class="sort_results_current">
           <a href="#">По цене</a>
         </li>
         <li>
@@ -100,37 +103,37 @@
       <ul>
         <li class="hotels_result_block">
           <h3>
-         <b>Amara resort and spa</b>
+         <a href="#" class="hotel_name">Amara resort and spa</a>
          <a href="#"><img src="img/amara_resort.jpg" width="135" height="90" alt="Amara resort"></a>
        </h3>
           <p class="rent_category">Гостиница</p>
           <p class="price_start">от 4000 р.</p>
           <a class="more_info" href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
+          <a href="#" class="book_it">Забронировать</a>
           <span class="stars_rating"><img src="#" alt="рейтинг отеля"></span>
           <p class="number_rating">рейтинг: 8,5</p>
         </li>
         <li class="hotels_result_block">
           <h3>
-         <b>Desert quail inn</b>
+         <a href="#" class="hotel_name">Desert quail inn</a>
          <a href="#"><img src="img/desert_quail.jpg" width="135" height="90" alt="Desert quail inn"></a>
        </h3>
           <p class="rent_category">Мотель</p>
           <p class="price_start">от 3000 р.</p>
           <a class="more_info" href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
+          <a href="#" class="book_it">Забронировать</a>
           <span class="stars_rating"><img src="#" alt="рейтинг отеля"></span>
           <p class="number_rating">рейтинг: 8,9</p>
         </li>
         <li class="hotels_result_block">
           <h3>
-         <b>Villas at poco diablo</b>
+         <a href="#" class="hotel_name">Villas at poco diablo</a>
          <a href="#"><img src="img/villas_at_poco.jpg" width="135" height="90" alt="Villas at poco diablo"></a>
        </h3>
           <p class="rent_category">Апартаменты</p>
           <p class="price_start">от 2000 р.</p>
           <a class="more_info" href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
+          <a href="#" class="book_it">Забронировать</a>
           <span class="stars_rating"><img src="#" alt="рейтинг отеля"></span>
           <p class="number_rating">рейтинг: 9,2</p>
         </li>
