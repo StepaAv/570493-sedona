@@ -1,20 +1,16 @@
 @font-face {
-  font-family: 'pt sans';
-  src: url('../fonts/PTS55F-webfont.eot');
-  src: url('../fonts/PTS55F-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/PTS55F-webfont.woff2') format('woff2'),
-  url('../fonts/PTS55F-webfont.woff') format('woff'),
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff2") format("woff2"),
+  url("../fonts/ptsans.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'pt sans';
-  src: url('../fontsPTS75F-webfont.eot');
-  src: url('../fontsPTS75F-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fontsPTS75F-webfont.woff2') format('woff2'),
-  url('../fontsPTS75F-webfont.woff') format('woff'),
-  font-weight: bold 700;
+  font-family: "PT Sans";
+  src: url("../fonts/ptsansbold.woff2") format("woff2"),
+  url("../fonts/ptsansbold.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -22,7 +18,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "pt_sansregular", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
@@ -74,7 +70,7 @@ a {
 
 .feature_item h3 {
   font-size: 21px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .find_hotel {
@@ -84,7 +80,7 @@ a {
 .find_hotel h2 {
   font-size: 30px;
   line-height: 36px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .interested p {
@@ -105,7 +101,7 @@ a {
   text-align: center;
   vertical-align: middle;
   border: none;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .form_list input[type="text"] {
@@ -135,7 +131,7 @@ a {
   color: #ffffff;
   font-size: 21px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
   vertical-align: middle;
   border: none;
@@ -219,7 +215,7 @@ a {
   background-color: #81b3d2;
   color: #ffffff;
   font-style: inherit;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .more_info:hover,
@@ -236,7 +232,7 @@ a {
   background-color: #766357;
   color: #ffffff;
   font-style: inherit;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .book_it:hover,
