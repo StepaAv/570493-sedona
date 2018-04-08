@@ -23,25 +23,28 @@
   <main class="container">
     <img class="intro_catalog" src="img/intro_2.jpg" width="1200" height="217" alt="Пейзаж Седоны">
     <section class="wishes">
-      <form class="options" method="post" action="https://echo.htmlacademy.ru">
-        <h2 class="checkbox_contents">Инфраструктура:</h2>
-        <ul class="choices">
-          <li>
-            <label>
-              <input class="checkbox" type="checkbox" name="swimmingpool"> Бассейн
-            </label>
-          </li>
-          <li>
-            <label>
-              <input class="checkbox" type="checkbox" name="parking"> Парковка
-            </label>
-          </li>
-          <li>
-            <label>
-              <input class="checkbox" type="checkbox" name="wifi"> Wi-fi
-            </label>
-          </li>
-        </ul>
+      <div class="checkbox_column1">
+        <form class="options" method="post" action="https://echo.htmlacademy.ru">
+          <h2 class="checkbox_contents">Инфраструктура:</h2>
+          <ul class="choices">
+            <li>
+              <label>
+                <input class="checkbox" type="checkbox" name="swimmingpool"> Бассейн
+              </label>
+            </li>
+            <li>
+              <label>
+                <input class="checkbox" type="checkbox" name="parking"> Парковка
+              </label>
+            </li>
+            <li>
+              <label>
+                <input class="checkbox" type="checkbox" name="wifi"> Wi-fi
+              </label>
+            </li>
+          </ul>
+      </div>
+      <div class="checkbox_column2">
         <h2 class="checkbox_contents">Тип жилья:</h2>
         <ul class="choices">
           <li>
@@ -60,6 +63,8 @@
             </label>
           </li>
         </ul>
+      </div>
+      <div class="checkbox_column3">
         <ul>
           <li class="price_per_day">Стоимость в сутки (P):
             <output name="priceoutput"></output>
@@ -71,10 +76,11 @@
             <button class="show_results" type="button">Показать</button>
           </li>
         </ul>
-      </form>
+        </form>
+      </div>
     </section>
     <section class="sort_results">
-      <h2>Найдено</h2>
+      <h2>Найдено:3</h2>
       <h3>Сортировка:</h3>
       <ul class="sort_results_by">
         <li class="sort_results_current">
@@ -101,40 +107,45 @@
     <section class="results">
       <ul>
         <li class="hotels_result_block">
-          <h3>
-         <a href="#" class="hotel_name">Amara resort and spa</a>
-         <a href="#"><img src="img/amara_resort.jpg" width="135" height="90" alt="Amara resort"></a>
+          <div class="hotels_result_block1"><a href="#"><img src="img/amara_resort.jpg" width="135" height="90" alt="Amara resort"></a></div>
+          <div class="hotels_result_block2">
+            <h3><a href="#" class="hotel_name">Amara resort and spa</a>
        </h3>
-          <p class="rent_category">Гостиница</p>
-          <p class="price_start">от 4000 р.</p>
-          <a class="more_info" href="#">Подробнее</a>
-          <a href="#" class="book_it">Забронировать</a>
-          <span class="stars_rating"><img src="#" alt="рейтинг отеля"></span>
-          <p class="number_rating">рейтинг: 8,5</p>
+            <p class="rent_category">Гостиница</p>
+            <p class="price_start">от 4000 р.</p>
+            <a class="more_info" href="#">Подробнее</a>
+            <a href="#" class="book_it">Забронировать</a></div>
+          <div class=".hotels_result_block3"><span class="stars_rating"><img src="#" alt="рейтинг отеля"></span>
+            <p class="number_rating">рейтинг: 8,5</p>
+          </div>
         </li>
         <li class="hotels_result_block">
-          <h3>
-         <a href="#" class="hotel_name">Desert quail inn</a>
-         <a href="#"><img src="img/desert_quail.jpg" width="135" height="90" alt="Desert quail inn"></a>
+          <div class="hotels_result_block1"><a href="#"><img src="img/desert_quail.jpg" width="135" height="90" alt="Desert quail inn"></a></div>
+          <div class="hotels_result_block2">
+            <h3><a href="#" class="hotel_name">Desert quail inn</a>
+         
        </h3>
-          <p class="rent_category">Мотель</p>
-          <p class="price_start">от 3000 р.</p>
-          <a class="more_info" href="#">Подробнее</a>
-          <a href="#" class="book_it">Забронировать</a>
-          <span class="stars_rating"><img src="#" alt="рейтинг отеля"></span>
-          <p class="number_rating">рейтинг: 8,9</p>
+            <p class="rent_category">Мотель</p>
+            <p class="price_start">от 3000 р.</p>
+            <a class="more_info" href="#">Подробнее</a>
+            <a href="#" class="book_it">Забронировать</a></div>
+          <div class="hotels_result_block3"><span class="stars_rating"><img src="#" alt="рейтинг отеля"></span>
+            <p class="number_rating">рейтинг: 8,9</p>
+          </div>
         </li>
         <li class="hotels_result_block">
-          <h3>
-         <a href="#" class="hotel_name">Villas at poco diablo</a>
-         <a href="#"><img src="img/villas_at_poco.jpg" width="135" height="90" alt="Villas at poco diablo"></a>
+          <div class="hotels_result_block1"><a href="#"><img src="img/villas_at_poco.jpg" width="135" height="90" alt="Villas at poco diablo"></a></div>
+          <div class="hotels_result_block2">
+            <h3><a href="#" class="hotel_name">Villas at poco diablo</a>
+         
        </h3>
-          <p class="rent_category">Апартаменты</p>
-          <p class="price_start">от 2000 р.</p>
-          <a class="more_info" href="#">Подробнее</a>
-          <a href="#" class="book_it">Забронировать</a>
-          <span class="stars_rating"><img src="#" alt="рейтинг отеля"></span>
-          <p class="number_rating">рейтинг: 9,2</p>
+            <p class="rent_category">Апартаменты</p>
+            <p class="price_start">от 2000 р.</p>
+            <a class="more_info" href="#">Подробнее</a>
+            <a href="#" class="book_it">Забронировать</a></div>
+          <div class="hotels_result_block3"><span class="stars_rating"><img src="#" alt="рейтинг отеля"></span>
+            <p class="number_rating">рейтинг: 9,2</p>
+          </div>
         </li>
       </ul>
     </section>

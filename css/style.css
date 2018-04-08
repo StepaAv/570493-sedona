@@ -24,11 +24,21 @@ body {
   font-weight: normal;
   color: #333333;
   text-transform: uppercase;
+  min-width: 1200px;
 }
 
 a {
   text-decoration: none;
 }
+
+
+/*.visually_hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}*/
 
 .site_navigation {
   list-style-type: none;
@@ -135,6 +145,8 @@ a {
   text-align: center;
   vertical-align: middle;
   border: none;
+  height: 85px;
+  width: 570px;
 }
 
 .brown_btn:hover,
@@ -153,7 +165,10 @@ a {
 
 .find_hotel_sedona {
   background-image: url("../img/map.jpg");
+  width: 1200px;
+  margin: 0 auto;
 }
+
 
 
 
@@ -265,3 +280,221 @@ a {
 .number_rating {
   color: #666666;
 }
+
+
+/*WWWWWWWWWWWWWW РАЗМЕТКА INDEX WWWWWWWWWWWWWWWWW*/
+
+.site_navigation {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+.site_navigation li:not(:nth-of-type(3)) {
+  margin-top: 20px;
+}
+
+.container {
+  width: 1200px
+  margin: 0 auto;
+}
+
+.intro {
+  display: flex; /*без него улетает*/
+  margin: 0 auto; 
+}
+
+.features_list {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+}
+
+.features_list li:first-of-type {
+  margin-left: 381px;
+  min-width: 443px;
+  padding-right: auto;
+  margin-bottom: 30px;
+}
+
+.features_list li:nth-child(2) {
+  margin-left: 354px;
+  margin-right: auto;
+  width: 490px;
+  margin-bottom: 50px;
+}
+
+.features_list li:nth-of-type(3) {
+  width: 400px;
+  min-height: 256px;
+}
+
+.features_list li:nth-of-type(4) {
+  width: 800px;
+  height: 256px;
+}
+
+.features_list li:nth-of-type(5) {
+  width: 400px;
+  min-height: 330px;
+}
+
+.features_list li:nth-of-type(6) {
+  width: 400px;
+  min-height: 330px;
+}
+
+.features_list li:nth-of-type(7) {
+  width: 400px;
+  min-height: 330px;
+}
+
+.features_list li:nth-of-type(8) {
+  width: 800px;
+  min-height: 256px;
+}
+
+.features_list li:nth-of-type(9) {
+  width: 400px;
+  height: 256px;
+}
+
+.features_list li:nth-of-type(10) {
+  width: 400px;
+  min-height: 300px;
+  background-color: #eeeeee;
+}
+
+.features_list li:nth-of-type(11) {
+  width: 400px;
+  min-height: 300px;
+  background-color: #eeeeee;
+}
+
+.features_list li:nth-of-type(12) {
+  width: 400px;
+  min-height: 300px;
+  background-color: #eeeeee;
+}
+
+.find_hotel_flex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.interested {
+  justify-content: center;
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.interested+p {
+  margin: 0 auto;
+  width: 445px;
+  margin-bottom: 50px;
+}
+
+.main_footer {
+  display: flex;
+  justify-content: space-around;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/*WWWWWWWWWWWWWW РАЗМЕТКА CATALOG WWWWWWWWWWWWWWWWW*/
+
+.intro_catalog {
+  display: flex; /*без него тоже улетает*/
+  margin: 0 auto;
+}
+
+.wishes {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #81b3d2;
+}
+
+.checkbox_column1 {
+  margin-left: 70px;
+}
+
+.checkbox_column2 {
+  margin-left: 100px;
+}
+
+.checkbox_column3 {
+  margin-left: 335px;
+}
+
+.sort_results { /*колонка сортировка*/
+  display: flex;
+  margin: 0 auto;
+  width: 1200px;
+  height: 120px;  
+}
+
+.sort_results h2 {
+  margin-left: 75px;
+}
+
+.sort_results h3 {
+  margin-left: 65px;
+}
+
+.sort_results_by {
+  display: flex;
+}
+
+.sort_results_by li:nth-child(2) {
+  margin-left: 35px;
+}
+
+.sort_results_by li:nth-child(3) {
+  margin-left: 35px;
+}
+
+.sort_results_by li:nth-child(4) {
+  margin-left: 500px;
+}
+
+.results ul { /*блоки отелей, их разделил на 3. 1)фотка 2)инфо и кнопки 3) то что в правом углу*/
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  min-height: 430px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.hotels_result_block {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin-left: 75px;
+}
+
+.hotels_result_block1 {
+  width: 140px;
+}
+
+.hotels_result_block2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 370px;
+  margin-left: 30px;
+}
+
+
+.hotels_result_block3 {
+  width: 240px;
+  margin-left: 290px;
+}
+
+
